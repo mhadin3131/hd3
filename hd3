@@ -1,0 +1,170 @@
+#############################
+########################################### Loops ###############
+#############################
+
+############################################### While Loop ##########################################
+##############
+num = 10
+while num > 0:
+    print(num)
+    num = num - 1
+
+print("Good Bye!")
+
+##############
+num = 10
+while num <= 20:
+    print(num)
+    num = num + 1
+
+print("Good Bye!")
+
+########################## Day Counter #########################
+Day = ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"]
+
+Count = 0
+while Count <= 6:
+    print("Today is: ", Day[Count])
+    Count = Count + 1
+
+########################################## two Loops #############################
+########################
+    
+x = 5
+while x%2 == 0:
+    print(x/2)
+    x = x + 1
+    
+else: #while x%2 != 0:
+    print(x*2)
+    x = x + 1
+
+print("Done!")
+
+####################
+x = 8
+while x <= 10:
+    while x <= 5:
+        print(x*3)
+        x = x + 1
+    else:
+        print(x - 1)
+        x = x + 1
+
+else:
+    print(x//2)
+    x = x + 1
+
+#################### Print Five Factors Between Two Numbers: Use List #####################
+x = 1
+List = []
+
+while x <= 200:
+    a = x*5
+    List.append(a)
+    x = x + 1
+    # print(List)
+
+print(List)
+print("There are ",len(List), " five factors between 1 & 1000")
+
+#################### Loop: Use Strings & List #####################
+ST = "FaraDars"
+index = 0
+ListST = []
+
+while index < len(ST):
+    letter = ST[index]
+    ListST.append(letter)
+    index = index + 1
+    #print(letter)
+
+print(ListST)
+
+############################################### for in Loop ##########################################
+##############
+
+ST = "FaraDars"
+
+for char in ST:
+    print(char)
+
+################
+ST1 = "Fara"
+ST2 = "Dars"
+
+for char in ST1:
+    print(char + ST2)
+
+################
+ST1 = "Fara"
+ST2 = "Dars"
+ST3 = ST1 + ST2
+
+for char in ST3:
+    print(char)
+
+print("Good Bye!")
+
+######################### for in Loop and Tuple ########################
+Tuple = "faradars","python","java"
+
+for char in Tuple:
+    print(char)
+
+########################## Day Counter #########################
+Day = ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"]
+
+for s in Day:
+    print("Today is: ",s)
+
+##########################
+alphabet = ("a","b","c","d")
+
+for index in range(len(alphabet)):
+    print("The letter is: ",alphabet[index])
+    
+##############################
+alphabet = []
+
+for index in alphabet:
+    print("The letter is: ",index)
+else:
+    print("It is Empty!")
+
+######################## Multiples Two series of Numbers ####################
+for x in range(1,10):
+    for y in range(1,10):
+        print(x*y)
+
+############################
+List1 = ["a","b","c","d"]
+List2 = ["e","f"]
+List3 = []
+
+for x in List1:
+    for y in List2:
+        List3.append(x + y)
+
+print(List3)
+
+#############################
+ST = "FaraDars"
+Count = 0
+for char in ST:
+    if char == "a":
+        Count = Count + 1
+print(Count)
+
+#################################
+x = 0
+number = []
+
+while x < 10:
+    number.append(x)
+    x = x + 1
+    print(number)
+
+for char in number:
+    if number == 0:
+        print(char)
